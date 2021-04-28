@@ -43,7 +43,7 @@ AddEventHandler('luke_multicharacter:CreateCharacter', function(charSlot, firstN
         sex = 'F'
     end
     print(sex)
-    MySQL.Async.execute('UPDATE `users` SET firstname = @firstname, lastname = @lastname, sex = @sex, dob = @dob, height = @height, weight = @weight WHERE identifier = @identifier', {
+    MySQL.Async.execute('UPDATE `users` SET firstname = @firstname, lastname = @lastname, sex = @sex, dateofbirth = @dob, height = @height, weight = @weight WHERE identifier = @identifier', {
         ['@identifier'] = charSlot..identifier,
         ['@firstname'] = firstToUpper(firstName),
         ['@lastname'] = firstToUpper(lastName),
