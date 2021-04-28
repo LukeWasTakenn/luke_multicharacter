@@ -19,7 +19,6 @@ Citizen.CreateThread(function()
 end)
 ```
 - Comment it out, so it should loook like this:
-- 
 ```lua
 --[[Citizen.CreateThread(function()
 	while true do
