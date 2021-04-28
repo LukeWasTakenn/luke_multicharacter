@@ -1,7 +1,6 @@
 ## Installation Guide
 
 - First of all make sure all your identifier rows in all the tables are set to varchar 50 limit.
-- I would probably delete all the esx_identity SQL rows located in Users (firstname, lastname, dateofbirth, sex, height).
 - Place the luke_multicharacter folder in your resources folder.
 - Execute my .sql file in your database, which should add new rows into the users table (firstname, lastname, dob, sex, height, weight).
 
